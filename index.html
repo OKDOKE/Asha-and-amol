@@ -4,13 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ASHA & AMOL'S ROYAL WEDDING INVITATION</title>
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Light, Elegant Royal Serif & Script Typography -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <script>
@@ -28,7 +25,7 @@
                             darkGold: '#8C6D31',
                             cream: '#FCFAF6',
                             ivory: '#F7F4EE',
-                            burgundy: '#5B1826',
+                            burgundy: '#6B1F2D',
                             textDark: '#4A3E3D',
                         }
                     },
@@ -56,6 +53,7 @@
             }
         }
     </script>
+
     <style>
         body {
             background-color: #FCFAF6;
@@ -77,7 +75,7 @@
             background: linear-gradient(135deg, rgba(252, 250, 246, 0.98) 0%, rgba(250, 240, 240, 0.92) 100%);
             box-shadow: 0 10px 30px -5px rgba(197, 160, 89, 0.08);
         }
-        
+
         .gold-border-card::before {
             content: '';
             position: absolute;
@@ -88,7 +86,7 @@
         }
 
         .gold-text-gradient {
-            background: linear-gradient(135deg, #7A5E28 0%, #C5A059 50%, #9B7736 100%);
+            background: linear-gradient(135deg, #6B1F2D 0%, #C5A059 50%, #9B7736 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
@@ -121,7 +119,7 @@
 
         .petal {
             position: absolute;
-            background: radial-gradient(circle at 30% 30%, #F2D6D6, #D49B9B, #C1272D);
+            background: radial-gradient(circle at 30% 30%, #F2D6D6, #D49B9B, #6B1F2D);
             border-radius: 150% 0 150% 0;
             opacity: 0.65;
             pointer-events: none;
@@ -146,7 +144,7 @@
 
     <div id="videoOpenerOverlay" class="fixed inset-0 z-50 bg-black flex flex-col justify-center items-center transition-opacity duration-1000 ease-in-out">
         <div class="relative w-full h-full max-w-md md:max-w-lg mx-auto flex items-center justify-center overflow-hidden shadow-2xl">
-            <video id="openerVideo" class="w-full h-full object-cover" autoplay muted playsinline loop poster="https://placehold.co/720x1280/5B1826/E8DCB8?text=ASHA+%26+AMOL+WEDDING">
+            <video id="openerVideo" class="w-full h-full object-cover" autoplay muted playsinline loop poster="https://placehold.co/720x1280/6B1F2D/E8DCB8?text=ASHA+%26+AMOL+WEDDING">
                 <source src="./gemini_generated_video_03df296a.mp4" type="video/mp4">
                 Your browser does not support video playback.
             </video>
@@ -164,12 +162,12 @@
             </div>
 
             <div class="absolute bottom-0 inset-x-0 p-6 bg-gradient-to-t from-black/90 via-black/50 to-transparent flex flex-col items-center space-y-4 z-20">
-                <button id="unmuteBtn" onclick="toggleVideoSound()" class="bg-black/60 hover:bg-black/80 text-pastel-champagne border border-pastel-gold/40 px-4 py-2 rounded-full text-xs font-cormorant tracking-[0.25em] uppercase transition-all duration-300">
+                <button id="unmuteBtn" onclick="toggleVideoSound()" class="bg-black/60 hover:bg-black/80 text-pastel-champagne border border-pastel-gold/40 px-4 py-2 rounded-full text-xs font-cormorant tracking-[0.25em] uppercase transition-all">
                     <i id="unmuteIcon" class="fa-solid fa-volume-xmark text-pastel-gold"></i>
                     <span id="unmuteText">ENABLE SOUND</span>
                 </button>
 
-                <button onclick="closeOpenerOverlay()" class="w-full max-w-xs gold-button-bg text-pastel-burgundy font-cormorant font-semibold py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.28em] shadow-xl transition hover:scale-[1.02]">
+                <button onclick="closeOpenerOverlay()" class="w-full max-w-xs gold-button-bg text-pastel-burgundy font-cormorant font-semibold py-3.5 px-6 rounded-full text-xs uppercase tracking-[0.28em] shadow-lg transition hover:scale-[1.02]">
                     <span>ENTER INVITATION</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                 </button>
@@ -180,7 +178,7 @@
     <header class="sticky top-0 z-40 bg-pastel-cream/90 backdrop-blur-md border-b border-pastel-champagne/50 shadow-sm transition-all duration-300">
         <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
             <a href="#home" class="font-cormorant text-2xl sm:text-3xl font-light tracking-widest gold-text-gradient uppercase">ASHA &amp; AMOL</a>
-            
+
             <nav class="hidden md:flex items-center space-x-7 font-cormorant text-xs text-pastel-textDark font-medium uppercase tracking-[0.2em]">
                 <a href="#home" class="hover:text-pastel-gold transition">HOME</a>
                 <a href="#couple" class="hover:text-pastel-gold transition">THE COUPLE</a>
@@ -208,9 +206,7 @@
                 <i class="fa-solid fa-crown text-pastel-gold text-2xl animate-float-slow"></i>
             </div>
 
-            <p class="font-cormorant text-xs sm:text-sm text-pastel-darkGold tracking-[0.35em] uppercase mb-2 font-medium">
-                TOGETHER WITH THEIR FAMILIES
-            </p>
+            <p class="font-cormorant text-xs sm:text-sm text-pastel-darkGold tracking-[0.35em] uppercase mb-2 font-medium">TOGETHER WITH THEIR FAMILIES</p>
 
             <h1 class="font-cormorant text-5xl sm:text-7xl tracking-wider text-pastel-burgundy py-1 font-light uppercase">
                 ASHA <span class="font-cormorant text-3xl sm:text-5xl text-pastel-gold font-light">&amp;</span> AMOL
@@ -264,7 +260,6 @@
                     </button>
                 </div>
             </div>
-
         </section>
 
         <section id="couple" class="py-16 px-4 bg-pastel-cream border-y border-pastel-champagne/40">
@@ -276,12 +271,7 @@
                     <div class="flex flex-col items-center">
                         <div class="royal-arch-frame w-64 h-80 sm:w-72 sm:h-96">
                             <div class="royal-arch-inner w-full h-full relative">
-                                <img 
-                                    src="./IMG_9640.JPG" 
-                                    alt="Amol" 
-                                    class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
-                                    onerror="this.onerror=null; this.src='https://placehold.co/600x800/E8DCB8/5B1826?text=AMOL';"
-                                >
+                                <img src="./IMG_9640.JPG" alt="Amol" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x800/E8DCB8/6B1F2D?text=AMOL';">
                             </div>
                         </div>
                         <h3 class="font-cormorant text-3xl font-light text-pastel-burgundy tracking-widest uppercase mt-4">AMOL</h3>
@@ -291,12 +281,7 @@
                     <div class="flex flex-col items-center">
                         <div class="royal-arch-frame w-64 h-80 sm:w-72 sm:h-96">
                             <div class="royal-arch-inner w-full h-full relative">
-                                <img 
-                                    src="./IMG_9639.JPG" 
-                                    alt="Asha" 
-                                    class="w-full h-full object-cover object-top hover:scale-105 transition duration-500"
-                                    onerror="this.onerror=null; this.src='https://placehold.co/600x800/E8DCB8/5B1826?text=ASHA';"
-                                >
+                                <img src="./IMG_9639.JPG" alt="Asha" class="w-full h-full object-cover object-top hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x800/E8DCB8/6B1F2D?text=ASHA';">
                             </div>
                         </div>
                         <h3 class="font-cormorant text-3xl font-light text-pastel-burgundy tracking-widest uppercase mt-4">ASHA</h3>
@@ -322,16 +307,14 @@
                                 <span class="font-cormorant text-blue-900 text-xs font-semibold tracking-widest">OCTOBER 29</span>
                             </div>
                             <h3 class="font-cormorant text-2xl text-pastel-burgundy mb-2 font-normal tracking-widest">SANGEET</h3>
-                            <p class="font-cormorant text-xs text-pastel-textDark/80 mb-4 leading-relaxed font-light tracking-wider">
-                                AN EVENING OF MUSICAL HARMONIES, ROYAL DANCE PERFORMANCES, AND VIBRANT CELEBRATIONS.
-                            </p>
+                            <p class="font-cormorant text-xs text-pastel-textDark/80 mb-4 leading-relaxed font-light tracking-wider">AN EVENING OF MUSICAL HARMONIES, ROYAL DANCE PERFORMANCES, AND VIBRANT CELEBRATIONS.</p>
                             <div class="text-xs space-y-2 border-t border-blue-200/60 pt-4 font-cormorant tracking-wider text-pastel-textDark">
                                 <p class="flex items-center"><i class="fa-regular fa-calendar text-pastel-gold w-6"></i> THURSDAY, 29TH OCTOBER 2026</p>
                                 <p class="flex items-center"><i class="fa-solid fa-location-dot text-pastel-gold w-6"></i> JHAJHARIA HOUSE AT PADAMPURA</p>
                             </div>
                         </div>
                         <div class="mt-6 pt-2">
-                            <a href="https://maps.app.goo.gl/1vetceKVnZXgBGZM9?g_st=iw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 rounded-full bg-white/70 text-blue-900 border border-blue-200 hover:bg-white transition font-cormorant text-xs font-semibold uppercase tracking-widest">
+                            <a href="https://maps.app.goo.gl/1vetceKVnZXgBGZM9?g_st=iw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 rounded-full bg-white/70 text-blue-900 border border-blue-200 hover:bg-white transition font-cormorant text-xs font-semibold uppercase tracking-[0.2em]">
                                 <i class="fa-solid fa-diamond-turn-right text-pastel-gold mr-2"></i>
                                 <span>GET DIRECTIONS</span>
                             </a>
@@ -341,20 +324,18 @@
                     <div class="gold-border-card bg-gradient-to-br from-pink-50 via-pink-100 to-pink-200 p-6 sm:p-8 rounded-3xl flex flex-col justify-between">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="bg-pink-100 text-pink-900 font-cormorant text-xs font-semibold px-3 py-1 rounded-full border border-pink-200 uppercase tracking-widest">FAMILY BLESSING</span>
+                                <span class="bg-pink-100 text-pink-900 font-cormorant text-xs font-semibold px-3 py-1 rounded-full border border-pink-200 uppercase tracking-widest">FAMILY BLESSINGS</span>
                                 <span class="font-cormorant text-pink-900 text-xs font-semibold tracking-widest">OCTOBER 29</span>
                             </div>
                             <h3 class="font-cormorant text-2xl text-pastel-burgundy mb-2 font-normal tracking-widest">CHAACK BHAT</h3>
-                            <p class="font-cormorant text-xs text-pastel-textDark/80 mb-4 leading-relaxed font-light tracking-wider">
-                                A CHERISHED TRADITIONAL CUSTOM HONORING MATERNAL AFFECTION, BLESSINGS, AND FAMILY UNITY.
-                            </p>
+                            <p class="font-cormorant text-xs text-pastel-textDark/80 mb-4 leading-relaxed font-light tracking-wider">A CHERISHED TRADITIONAL CUSTOM HONORING MATERNAL AFFECTION, BLESSINGS, AND FAMILY UNITY.</p>
                             <div class="text-xs space-y-2 border-t border-pink-200/60 pt-4 font-cormorant tracking-wider text-pastel-textDark">
                                 <p class="flex items-center"><i class="fa-regular fa-calendar text-pastel-gold w-6"></i> THURSDAY, 29TH OCTOBER 2026</p>
                                 <p class="flex items-center"><i class="fa-solid fa-location-dot text-pastel-gold w-6"></i> JHAJHARIA HOUSE AT PADAMPURA</p>
                             </div>
                         </div>
                         <div class="mt-6 pt-2">
-                            <a href="https://maps.app.goo.gl/1vetceKVnZXgBGZM9?g_st=iw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 rounded-full bg-white/70 text-pink-900 border border-pink-200 hover:bg-white transition font-cormorant text-xs font-semibold uppercase tracking-widest">
+                            <a href="https://maps.app.goo.gl/1vetceKVnZXgBGZM9?g_st=iw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 rounded-full bg-white/70 text-pink-900 border border-pink-200 hover:bg-white transition font-cormorant text-xs font-semibold uppercase tracking-[0.2em]">
                                 <i class="fa-solid fa-diamond-turn-right text-pastel-gold mr-2"></i>
                                 <span>GET DIRECTIONS</span>
                             </a>
@@ -368,40 +349,36 @@
                                 <span class="font-cormorant text-yellow-900 text-xs font-semibold tracking-widest">OCTOBER 31</span>
                             </div>
                             <h3 class="font-cormorant text-2xl text-pastel-burgundy mb-2 font-normal tracking-widest">HALDI</h3>
-                            <p class="font-cormorant text-xs text-pastel-textDark/80 mb-4 leading-relaxed font-light tracking-wider">
-                                AN AUSPICIOUS MORNING SCENTED WITH YELLOW TURMERIC PASTE, FRESH MARIGOLDS, AND LAUGHTER.
-                            </p>
+                            <p class="font-cormorant text-xs text-pastel-textDark/80 mb-4 leading-relaxed font-light tracking-wider">AN AUSPICIOUS MORNING SCENTED WITH YELLOW TURMERIC PASTE, FRESH MARIGOLDS, AND LAUGHTER.</p>
                             <div class="text-xs space-y-2 border-t border-yellow-200/60 pt-4 font-cormorant tracking-wider text-pastel-textDark">
                                 <p class="flex items-center"><i class="fa-regular fa-calendar text-pastel-gold w-6"></i> SATURDAY, 31ST OCTOBER 2026</p>
                                 <p class="flex items-center"><i class="fa-solid fa-location-dot text-pastel-gold w-6"></i> JHAJHARIA HOUSE AT PADAMPURA</p>
                             </div>
                         </div>
                         <div class="mt-6 pt-2">
-                            <a href="https://maps.app.goo.gl/1vetceKVnZXgBGZM9?g_st=iw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 rounded-full bg-white/70 text-yellow-900 border border-yellow-200 hover:bg-white transition font-cormorant text-xs font-semibold uppercase tracking-widest">
+                            <a href="https://maps.app.goo.gl/1vetceKVnZXgBGZM9?g_st=iw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-2.5 rounded-full bg-white/70 text-yellow-900 border border-yellow-200 hover:bg-white transition font-cormorant text-xs font-semibold uppercase tracking-[0.2em]">
                                 <i class="fa-solid fa-diamond-turn-right text-pastel-gold mr-2"></i>
                                 <span>GET DIRECTIONS</span>
                             </a>
                         </div>
                     </div>
 
-                    <div class="gold-border-card bg-gradient-to-br from-red-50 via-red-100 to-red-200 p-6 sm:p-8 rounded-3xl flex flex-col justify-between">
+                    <div class="gold-border-card bg-gradient-to-br from-red-100 via-[#f7d3d9] to-[#6B1F2D] p-6 sm:p-8 rounded-3xl flex flex-col justify-between text-pastel-burgundy">
                         <div>
                             <div class="flex items-center justify-between mb-4">
-                                <span class="bg-red-100 text-red-900 font-cormorant text-xs font-bold px-3 py-1 rounded-full border border-red-200 uppercase tracking-widest">MAIN WEDDING</span>
-                                <span class="font-cormorant text-red-900 text-xs font-bold tracking-widest">NOVEMBER 02</span>
+                                <span class="bg-[#6B1F2D] text-white font-cormorant text-xs font-bold px-3 py-1 rounded-full uppercase tracking-widest">MAIN WEDDING</span>
+                                <span class="font-cormorant text-[#6B1F2D] text-xs font-bold tracking-widest">NOVEMBER 02</span>
                             </div>
                             <h3 class="font-cormorant text-2xl sm:text-3xl text-pastel-burgundy mb-2 font-normal tracking-widest">WEDDING</h3>
-                            <p class="font-cormorant text-xs text-pastel-textDark/90 mb-4 leading-relaxed font-light tracking-wider">
-                                THE SOLEMN MARITAL VOWS AND SEVEN PHERAS UNDER THE ROYAL MANDAP, FOLLOWED BY DINNER.
-                            </p>
-                            <div class="text-xs space-y-2 border-t border-red-200/60 pt-4 font-cormorant tracking-wider text-pastel-textDark font-medium">
+                            <p class="font-cormorant text-xs text-pastel-textDark/90 mb-4 leading-relaxed font-light tracking-wider">THE SOLEMN MARITAL VOWS AND SEVEN PHERAS UNDER THE ROYAL MANDAP, FOLLOWED BY DINNER.</p>
+                            <div class="text-xs space-y-2 border-t border-[#6B1F2D]/25 pt-4 font-cormorant tracking-wider text-pastel-textDark font-medium">
                                 <p class="flex items-center"><i class="fa-regular fa-calendar text-pastel-gold w-6"></i> MONDAY, 2ND NOVEMBER 2026</p>
                                 <p class="flex items-center"><i class="fa-regular fa-clock text-pastel-gold w-6"></i> 6:00 PM ONWARDS</p>
                                 <p class="flex items-center"><i class="fa-solid fa-location-dot text-pastel-gold w-6"></i> WONDERLAND FARMS, JALANDHAR</p>
                             </div>
                         </div>
                         <div class="mt-6 pt-2">
-                            <a href="https://maps.google.com/?q=Wonderland+Farms+Jalandhar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 rounded-full bg-white/70 text-red-900 border border-red-200 hover:bg-white transition font-cormorant text-xs font-bold uppercase tracking-widest">
+                            <a href="https://maps.google.com/?q=Wonderland+Farms+Jalandhar" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center w-full py-3 rounded-full bg-[#6B1F2D] text-white hover:brightness-110 transition font-cormorant text-xs font-semibold uppercase tracking-[0.2em]">
                                 <i class="fa-solid fa-location-arrow mr-2"></i>
                                 <span>DIRECTIONS TO WONDERLAND FARMS</span>
                             </a>
@@ -419,12 +396,13 @@
 
                 <div class="gold-border-card p-3 rounded-3xl overflow-hidden shadow-sm">
                     <div class="w-full h-80 rounded-2xl overflow-hidden relative">
-                        <iframe 
-                            title="Wonderland Farms Jalandhar Map" 
+                        <iframe
+                            title="Wonderland Farms Jalandhar Map"
                             class="w-full h-full border-0"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.204561849141!2d75.5255478!3d31.326015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a5e3c8f8d9d%3A0x3a1f5b7d2c0f3d7!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" 
-                            allowfullscreen="" 
-                            loading="lazy">
+                            src="https://www.google.com/maps?q=Wonderland%20Farms%20Jalandhar&z=13&output=embed"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
                         </iframe>
                     </div>
                 </div>
@@ -440,7 +418,7 @@
 
                     <span class="font-cormorant text-xs text-pastel-gold uppercase tracking-[0.35em] font-semibold">FOR ANY ASSISTANCE &amp; QUERIES</span>
                     <h2 class="font-cormorant text-3xl sm:text-4xl font-light text-pastel-burgundy mt-1 tracking-widest uppercase">FOR INFORMATION CONTACT</h2>
-                    
+
                     <div class="my-4">
                         <h3 class="font-cormorant text-2xl font-normal text-pastel-darkGold tracking-widest uppercase">DEEPAK JHAJHARIA</h3>
                         <p class="font-cormorant text-xs text-pastel-textDark/70 mt-1 uppercase tracking-wider font-light">JHAJHARIA FAMILY</p>
@@ -488,9 +466,7 @@
         <div class="max-w-md mx-auto px-4">
             <h4 class="font-cormorant text-2xl font-light tracking-widest text-pastel-burgundy">ASHA &amp; AMOL</h4>
             <p class="font-cormorant text-[11px] text-pastel-darkGold tracking-[0.25em] mt-1">ROYAL WEDDING CELEBRATION</p>
-            <p class="font-cormorant text-xs text-pastel-textDark/60 mt-4 font-light tracking-wider">
-                WE LOOK FORWARD TO CELEBRATING THIS ROYAL OCCASION WITH YOU!
-            </p>
+            <p class="font-cormorant text-xs text-pastel-textDark/60 mt-4 font-light tracking-wider">WE LOOK FORWARD TO CELEBRATING THIS ROYAL OCCASION WITH YOU!</p>
         </div>
     </footer>
 
@@ -544,19 +520,19 @@
             openerVideo.muted = false;
             openerVideo.play();
             tapPlayHint.classList.add('opacity-0', 'pointer-events-none');
-            unmuteIcon.className = "fa-solid fa-volume-high text-pastel-gold";
-            unmuteText.innerText = "MUTE SOUND";
+            unmuteIcon.className = 'fa-solid fa-volume-high text-pastel-gold';
+            unmuteText.innerText = 'MUTE SOUND';
         }
 
         function toggleVideoSound() {
             if (openerVideo.muted) {
                 openerVideo.muted = false;
-                unmuteIcon.className = "fa-solid fa-volume-high text-pastel-gold";
-                unmuteText.innerText = "MUTE SOUND";
+                unmuteIcon.className = 'fa-solid fa-volume-high text-pastel-gold';
+                unmuteText.innerText = 'MUTE SOUND';
             } else {
                 openerVideo.muted = true;
-                unmuteIcon.className = "fa-solid fa-volume-xmark text-pastel-gold";
-                unmuteText.innerText = "ENABLE SOUND";
+                unmuteIcon.className = 'fa-solid fa-volume-xmark text-pastel-gold';
+                unmuteText.innerText = 'ENABLE SOUND';
             }
         }
 
@@ -601,11 +577,11 @@
                 playShehnaiNote();
                 musicInterval = setInterval(playShehnaiNote, 1300);
                 isMusicPlaying = true;
-                icon.className = "fa-solid fa-volume-high text-xs animate-pulse";
+                icon.className = 'fa-solid fa-volume-high text-xs animate-pulse';
             } else {
                 clearInterval(musicInterval);
                 isMusicPlaying = false;
-                icon.className = "fa-solid fa-music text-xs";
+                icon.className = 'fa-solid fa-music text-xs';
             }
         }
 
